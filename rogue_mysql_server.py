@@ -17,7 +17,7 @@ PORT = 3306
 log = logging.getLogger(__name__)
 
 log.setLevel(logging.INFO)
-tmp_format = logging.handlers.WatchedFileHandler('mysql.log', 'ab')
+tmp_format = logging.handlers.WatchedFileHandler('./log/mysql.log', 'ab')
 tmp_format.setFormatter(logging.Formatter("%(asctime)s:%(levelname)s:%(message)s"))
 log.addHandler(
     tmp_format
