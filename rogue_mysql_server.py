@@ -25,6 +25,11 @@ log.addHandler(
 
 filelist = (
     '/etc/passwd',
+    '/etc/hosts',
+    '/var/www/html/index.php',
+    '/var/www/html/wp-config.php',
+    '/var/www/index.php',
+    '/var/www/wp-config.php'
 )
 
 
